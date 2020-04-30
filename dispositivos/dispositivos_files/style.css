@@ -1,0 +1,24 @@
+.partners_block ul {
+    text-align: center;
+    padding: 0;
+}
+.partners_block ul li {
+    padding: 15px;
+    list-style: none;
+    display: inline-block;
+}
+.partners_block img {
+    opacity: 0.3;
+    -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+    filter: grayscale(100%);
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+.partners_block img:hover {
+    opacity: 0.8;
+    -webkit-filter: grayscale(0%); /* Safari 6.0 - 9.0 */
+    filter: grayscale(00%);
+}

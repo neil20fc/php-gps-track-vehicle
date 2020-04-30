@@ -1,0 +1,189 @@
+.ms-parent {
+    display: inline-block;
+    position: relative;
+    vertical-align: middle;
+}
+
+.ms-choice {
+    display: block;
+    width: 100%;
+    height: 24px;
+    padding: 0;
+    overflow: hidden;
+    cursor: pointer;
+    border: 1px solid #f5f5f5;
+    text-align: left;
+    white-space: nowrap;
+    line-height: 24px;
+    font-family: "open sans";
+    color: #444444;
+    text-decoration: none;
+    background-color: #f5f5f5;
+}
+
+.ms-choice:hover {
+    background-color: #ffffff;  
+}
+
+.ms-choice.disabled {
+    background-color: #eeeeee;
+    background-image: none;
+    border: 1px solid #eeeeee;
+    cursor: default;
+}
+
+.ms-choice > span {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 18px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: block;
+    padding-left: 5px;
+}
+
+.ms-choice > span.placeholder {
+    color: #999999;
+}
+
+.ms-choice > div {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 20px;
+    height: 24px;
+    background-image: url(images/arrow-bottom.svg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 10px 10px;
+}
+
+.ms-choice > div.open {
+        
+}
+
+.ms-drop {
+    overflow: hidden;
+    display: none;
+    margin-top: -1px;
+    padding: 0;
+    position: fixed;
+    z-index: 99999999;
+    background: #fff;
+    color: #444444;
+    border: 1px solid #f5f5f5;
+/*    -webkit-box-shadow: 0 1px 5px rgba(0, 0, 0, 0.4);
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.4);*/
+}
+
+.ms-search {
+    display: inline-block;
+    margin: 0;
+    min-height: 24px;
+    padding: 4px;
+    position: relative;
+    white-space: nowrap;
+    width: 100%;
+    z-index: 10000;
+}
+
+.ms-search input {
+    width: 100%;
+    height: auto !important;
+    min-height: 24px;
+    padding: 0 20px 0 5px;
+    margin: 0;
+    outline: 0;
+    border: 1px solid #f5f5f5;
+    text-indent: 30px;
+    background: #f5f5f5 url("images/search.svg") 10px center no-repeat;
+    background-size: 14px 14px;
+}
+
+.ms-search input:hover { background-color: #ffffff; }
+
+.ms-search, .ms-search input {
+    -webkit-box-sizing: border-box;
+    -khtml-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.ms-drop input[type="checkbox"] {
+    vertical-align: middle;
+    margin: 0;
+    margin-right: 5px;
+}
+
+.ms-drop input[type="radio"] {
+    display: none;
+}
+
+.ms-drop ul {
+    overflow-x: hidden;
+    overflow-y: auto;
+    margin: 0;
+    padding: 0px;
+    line-height: 24px;
+}
+
+.ms-drop ul > li {
+    list-style: none;
+    display: list-item;
+    background-image: none;
+    position: static;
+}
+
+.ms-drop ul > li .disabled {
+    opacity: .35;
+    filter: Alpha(Opacity=35);
+}
+
+.ms-drop ul > li.multiple {
+    display: block;
+    float: left;
+}
+
+.ms-drop ul > li.group {
+    clear: both;
+}
+
+.ms-drop ul > li.selected {
+    background-color: #f5f5f5;
+}
+
+.ms-drop ul > li:hover {
+    background-color: #f5f5f5;
+}
+
+.ms-drop ul > li.multiple label {
+    width: 100%;
+    display: block;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.ms-drop ul > li label {
+    display: block;
+    white-space: nowrap;
+    padding-left: 5px;
+    height: 24px;
+}
+
+.ms-drop ul > li label.optgroup {
+    font-weight: bold;
+    background-color: #f5f5f5;
+}
+
+.ms-drop .ms-no-items {
+    padding-left: 5px;
+}
+
+.ms-drop .ms-no-results {
+    display: none;
+    padding-left: 5px;
+}
